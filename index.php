@@ -4,10 +4,10 @@
 		<title>Treeview Application</title>
 		<!-- Added some libraries -->
 		<script src="js/jquery.min.js"></script>    
+		<script src="js/script.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<script type="text/javascript" charset="utf8" src="js/bootstrap-treeview.js"></script>
 		<link rel="stylesheet" href="css/bootstrap-treeview.min.css" />
-		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="container" style="width:900px;">
@@ -26,7 +26,7 @@
 							</div>
 							<div class="form-group">
 								<label>Enter Item Name</label>
-								<input type="text" name="item_name" value="" id="item_name" class="form-control">
+								<input type="text" name="item_name" value="" id="item_name" class="form-control" required="">
 							</div>
 							<div class="form-group">
 								<input type="submit" name="action" id="action" value="Add" class="btn btn-info" />
@@ -34,7 +34,7 @@
 						</form>
 					</div>
 					<div class="col-md-6">
-						<h3 align="center"><u>View in Tree Structure</u></h3>
+						<h3 align="center"><u>View in Tree Structure</u>&nbsp; &nbsp; &nbsp; <button id="rmv-btn" class="rmv-btn btn btn-danger">Remove Item</button></h3>
 						<br />
 
 					<!-- For tree structure -->	

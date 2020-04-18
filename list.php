@@ -19,6 +19,8 @@ function get_node_data($parent_id, $conn)
   foreach($result as $val)
   {
     $sub_array = array();
+    $sub_array['id'] = $val['id'];
+    $sub_array['pid'] = $val['parent_id'];
     $sub_array['text'] = $val['name'];
     $dataa = get_node_data($val['id'], $conn);
     $sub_array['nodes'] = array_values($dataa);
